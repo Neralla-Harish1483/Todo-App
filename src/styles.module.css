@@ -1,0 +1,22 @@
+.headerTitle{
+    font-size: 30px;
+    text-align: center;
+}
+.mainWrapper{
+    padding: 50px;
+
+}
+.todoListWrapper{
+    display: grid;
+    gap: 15px;
+    /* in a grid if we make repeat only then it will come as in a row 4 then it wont come. */
+    grid-template-columns: repeat(4,1fr); 
+}
+
+.todoListWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+}
