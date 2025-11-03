@@ -4,6 +4,7 @@ import classes from './styles.module.css'
 import TodoList from "./components/toto-item"
 import TodoDetails from "./components/todo-details"
 import { Skeleton } from "@mui/material"
+import {CircularProgress} from "@mui/material"
 
 function App() {
   const [todoList,settodoList] = useState([])
@@ -65,7 +66,7 @@ function App() {
   )
 
   if(loading){
-    return <Skeleton variant="rectangulat" width={650} height={650}/>
+    return <CircularProgress size="3rem" />
   }
 
 

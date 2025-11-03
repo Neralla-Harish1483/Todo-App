@@ -2,6 +2,8 @@ import { Dialog, DialogActions, DialogTitle } from "@mui/material";
 import { Fragment } from "react";
 
 export default function TodoDetails({todoDetails,openDialog,setopenDialog,settodoDetails}){
+
+
     return <Fragment>
         <Dialog open={openDialog} onClose={()=>setopenDialog(false)}>
             <DialogTitle>{todoDetails?.todo}</DialogTitle>
